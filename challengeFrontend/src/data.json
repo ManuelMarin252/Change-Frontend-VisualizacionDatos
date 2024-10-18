@@ -1,0 +1,186 @@
+{
+  "ethereum": {
+    "blocks": [
+      {
+        "reward": 301.3641107961352,
+        "timestamp": {
+          "dayOfMonth": 1
+        }
+      },
+      {
+        "reward": 388.924724975701,
+        "timestamp": {
+          "dayOfMonth": 2
+        }
+      },
+      {
+        "reward": 379.2310714899656,
+        "timestamp": {
+          "dayOfMonth": 3
+        }
+      },
+      {
+        "reward": 1116.9478364685815,
+        "timestamp": {
+          "dayOfMonth": 4
+        }
+      },
+      {
+        "reward": 392.2631151392865,
+        "timestamp": {
+          "dayOfMonth": 5
+        }
+      },
+      {
+        "reward": 411.79557513962334,
+        "timestamp": {
+          "dayOfMonth": 6
+        }
+      },
+      {
+        "reward": 312.49484460459837,
+        "timestamp": {
+          "dayOfMonth": 7
+        }
+      },
+      {
+        "reward": 363.268338996407,
+        "timestamp": {
+          "dayOfMonth": 8
+        }
+      },
+      {
+        "reward": 418.3405711778092,
+        "timestamp": {
+          "dayOfMonth": 9
+        }
+      },
+      {
+        "reward": 379.68520929067796,
+        "timestamp": {
+          "dayOfMonth": 10
+        }
+      },
+      {
+        "reward": 462.713935873488,
+        "timestamp": {
+          "dayOfMonth": 11
+        }
+      },
+      {
+        "reward": 493.0011761568935,
+        "timestamp": {
+          "dayOfMonth": 12
+        }
+      },
+      {
+        "reward": 471.9136278053739,
+        "timestamp": {
+          "dayOfMonth": 13
+        }
+      },
+      {
+        "reward": 563.6261914892036,
+        "timestamp": {
+          "dayOfMonth": 14
+        }
+      },
+      {
+        "reward": 406.1157656337486,
+        "timestamp": {
+          "dayOfMonth": 15
+        }
+      },
+      {
+        "reward": 580.4935701534569,
+        "timestamp": {
+          "dayOfMonth": 16
+        }
+      },
+      {
+        "reward": 425.4922086087115,
+        "timestamp": {
+          "dayOfMonth": 17
+        }
+      },
+      {
+        "reward": 601.165295552898,
+        "timestamp": {
+          "dayOfMonth": 18
+        }
+      },
+      {
+        "reward": 391.46944735649527,
+        "timestamp": {
+          "dayOfMonth": 19
+        }
+      },
+      {
+        "reward": 442.6365952021874,
+        "timestamp": {
+          "dayOfMonth": 20
+        }
+      },
+      {
+        "reward": 431.9363919387454,
+        "timestamp": {
+          "dayOfMonth": 21
+        }
+      },
+      {
+        "reward": 349.3752186078365,
+        "timestamp": {
+          "dayOfMonth": 22
+        }
+      },
+      {
+        "reward": 398.24121409226694,
+        "timestamp": {
+          "dayOfMonth": 23
+        }
+      },
+      {
+        "reward": 742.6561281666334,
+        "timestamp": {
+          "dayOfMonth": 24
+        }
+      },
+      {
+        "reward": 530.406321193781,
+        "timestamp": {
+          "dayOfMonth": 25
+        }
+      },
+      {
+        "reward": 592.1941359864791,
+        "timestamp": {
+          "dayOfMonth": 26
+        }
+      },
+      {
+        "reward": 480.55425787311833,
+        "timestamp": {
+          "dayOfMonth": 27
+        }
+      },
+      {
+        "reward": 340.73051127281065,
+        "timestamp": {
+          "dayOfMonth": 28
+        }
+      },
+      {
+        "reward": 390.20941655096635,
+        "timestamp": {
+          "dayOfMonth": 29
+        }
+      },
+      {
+        "reward": 388.2558113875721,
+        "timestamp": {
+          "dayOfMonth": 30
+        }
+      }
+    ]
+  }
+}
