@@ -26,10 +26,10 @@ function App () {
         <Box display='flex' justifyContent='center' alignItems='center' height='700px' width='500px'>
         <Card>
           <CardHeader title='ETH x USD' />
-          <CardContent>
-            <Box display='flex' justifyContent='center' alignItems='start' gap='10px' width='400px'>
+          <CardContent sx ={{ display: 'flex', flexDirection: 'column' }}>
+            <Box display='flex' justifyContent='center' alignItems='start' gap='10px' width='100%'>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <DateRangePicker value={value} localeText={{ start: 'Desde', end: 'Hasta' }} onChange={onChange}></DateRangePicker>
+              <DateRangePicker value={value} localeText={{ start: 'Desde', end: 'Hasta' }} sx={{ width: '100%' }} onChange={onChange}></DateRangePicker>
               </LocalizationProvider>
             </Box>
             <Box display='flex' justifyContent='center' alignItems='center' height='400px' width='500px'>
@@ -50,9 +50,9 @@ const Linechart = () => {
     d3.select(ref.current).selectAll('*').remove()
 
     // Set the dimensions and margins of the graph
-    const margin = { top: 30, right: 30, bottom: 70, left: 60 }
-    const width = 460 - margin.left - margin.right
-    const height = 400 - margin.top - margin.bottom
+    const margin = { top: 20, right: 10, bottom: 20, left: 40 }
+    const width = 300 - margin.left - margin.right
+    const height = 300 - margin.top - margin.bottom
 
     // Append the svg object to the body of the page
     const svg = d3
@@ -61,7 +61,7 @@ const Linechart = () => {
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
       .append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`)
+      .attr('transform', `translate(${margin.left},${margin.top * 1})`)
 
     // Create a tooltip div element (initially hidden)
     const tooltip = d3
@@ -171,7 +171,7 @@ const Linechart = () => {
       })
   }, [])
 
-  return <div ref={ref}></div>
+  return <Box sx={{ width: '350' }} ref={ref}></Box>
 }
 
 export default App
