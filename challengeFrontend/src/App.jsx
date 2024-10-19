@@ -79,22 +79,24 @@ const Linechart = () => {
 
     // Parse the Data (Use your provided data.json)
     const data = Data
-
     // Process the data into usable format (group by date)
     const rewardsByDay = data.ethereum.blocks.reduce((acc, block) => {
-      const date = new Date(block.timestamp.iso8601).toISOString() // Formato YYYY-MM-DD
+      const date = new Date(block.date.date).toISOString() // Formato YYYY-MM-DD
       if (!acc[date]) {
         acc[date] = 0
       }
       acc[date] += block.reward
       return acc
     }, {})
-
+    let rewardCount = 0
     // Convert the object to an array for D3
-    const processedData = Object.entries(rewardsByDay).map(([date, reward]) => ({
-      date: new Date(date),
-      reward
-    }))
+    const processedData = Object.entries(rewardsByDay).map(([date, reward]) => {
+      rewardCount += reward
+      return {
+        date: new Date(date),
+        reward: rewardCount
+      }
+    })
 
     // X axis (dates)
     const x = d3
@@ -122,7 +124,7 @@ const Linechart = () => {
       .datum(processedData)
       .attr('fill', 'none')
       .attr('stroke', '#5f0f40')
-      .attr('stroke-width', 2)
+      .attr('stroke-width', 1)
       .attr('d', line)
 
     // Add the dots for each point
@@ -133,14 +135,14 @@ const Linechart = () => {
       .append('circle')
       .attr('cx', (d) => x(d.date))
       .attr('cy', (d) => y(d.reward))
-      .attr('r', 5)
+      .attr('r', 2)
       .attr('fill', '#5f0f40')
       .on('mouseover', function (event, d) {
         d3.select(this)
           .transition()
           .duration(200)
           .attr('fill', '#d62828')
-          .attr('r', 8)
+          .attr('r', 4)
 
         tooltip
           .style('visibility', 'visible')
@@ -159,7 +161,7 @@ const Linechart = () => {
           .transition()
           .duration(200)
           .attr('fill', '#5f0f40')
-          .attr('r', 5)
+          .attr('r', 2)
 
         tooltip
           .transition()
